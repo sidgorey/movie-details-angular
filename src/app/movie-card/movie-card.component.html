@@ -1,0 +1,10 @@
+<div class="card" (click) = "launchIt($event)">
+    <h3>{{ movie.movie_title }}</h3>
+    <h4>Directed by : {{ movie.director_name }}</h4>
+    <h5 *ngIf="isValidNumber(movie.budget)">Budget of {{ movie.budget | millionNumber }}</h5>
+    <h5 *ngIf="!isValidNumber(movie.budget)">Budget details not available.</h5>
+    <h5 *ngIf="isValidNumber(movie.content_rating)">Rated {{ movie.content_rating }}</h5>
+    <h5 *ngIf="!isValidNumber(movie.content_rating)">Content Details not available.</h5>
+    <h5 *ngIf="isValidNumber(movie.title_year)">Title Year of {{ movie.title_year }}</h5>
+    <h5 *ngIf="!isValidNumber(movie.title_year)">Title Year not available.</h5>
+</div>

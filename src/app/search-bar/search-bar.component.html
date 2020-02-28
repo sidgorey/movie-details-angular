@@ -1,0 +1,16 @@
+<div id="search-bar">
+<input type="text" (change) = "updateSearchString($event)"/>
+<button (click)="search($event)">Search...</button>
+<select ng-model="sort_by" (change) ="optionSelected($event)" >
+    <option value="All">All</option>
+    <option value="Budget: Low to High">Budget: Low to High</option>
+    <option value="Budget: High to Low">Budget: High to Low</option>
+    <option value="Rating: Low to High">Rating: Low to High</option>
+    <option value="Rating: High to Low">Rating: High to Low</option>
+    <option value = "Title Year: Latest First">Title Year: Latest First</option>
+    <option value = "Title Year: Oldies First">Title Year: Oldies First</option>
+</select>
+
+
+
+</div>

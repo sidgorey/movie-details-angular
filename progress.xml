@@ -1,0 +1,10 @@
+<progress-by-date>
+    <date>16 Feb</date>
+    <progress>
+        <task>Basic loading, hit API, view all movies.</task><prognosis>Done</prognosis>
+        <task>Fit the text in the card.</task><prognosis>Remaining</prognosis>    
+        <task>Sort by feature.</task><prognosis>Remaining</prognosis>    
+        <task>search movie by name.</task><prognosis>Remaining</prognosis>    
+        <task></task><prognosis>Remaining</prognosis>    
+    </progress>
+</progress-by-date>

@@ -1,0 +1,9 @@
+<div>
+  <app-search-bar (sort_by_emitter) = "sort_by_emitter($event)" (search) = "searchString($event)"></app-search-bar>
+  <!-- <app-movie-details [movie] = "popupMovie" [hidden] = "!shouldShowPopUp"></app-movie-details> -->
+    <div class="movie-card-wrapper" *ngFor = "let movie of display_movies">
+      <!-- <div *ngIf="movie == null; then thenBlock else elseBlock"></div> -->
+        <!-- <ng-template #thenBlock><app-movie-card (launchDetailsCard) = "showCard($event)" [movie] = "emptyMovie" ></app-movie-card></ng-template> -->
+         <app-movie-card (launchDetailsCard) = "showCard($event)" [movie] = "movie" ></app-movie-card>
+      </div>
+</div>

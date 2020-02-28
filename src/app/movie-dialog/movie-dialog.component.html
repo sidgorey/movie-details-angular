@@ -1,0 +1,14 @@
+<div>
+    <h3>{{ data.movie.movie_title }}</h3>
+    <h4>Directed by : {{ data.movie.director_name }}</h4>
+    <h5 *ngIf="data.movie.actor1 || data.movie.actor2">Starring : {{ data.movie.actor1?data.movie.actor1 : ''}} {{   data.movie.actor2?'and ' + data.movie.actor2 : '' }} </h5>
+    <h5 *ngIf="!data.movie.actor1 && !data.movie.actor2">Actor details not available.</h5>
+    <h5>Genres : {{data.movie.genres}}</h5>
+    <h5 *ngIf="isValidNumber(data.movie.budget)">Budget of {{ data.movie.budget | millionNumber }}</h5>
+    <h5 *ngIf="!isValidNumber(data.movie.budget)">Budget details not available.</h5>
+    <h5 *ngIf="isValidNumber(data.movie.content_rating)">Rated {{ data.movie.content_rating }}</h5>
+    <h5 *ngIf="!isValidNumber(data.movie.content_rating)">Content Details not available.</h5>
+    <h5 *ngIf="isValidNumber(data.movie.title_year)">Title Year of {{ data.movie.title_year }}</h5>
+    <h5 *ngIf="!isValidNumber(data.movie.title_year)">Title Year not available.</h5>
+    <h5 *ngIf="data.movie.movie_imdb_link != null">{{data.movie.movie_imdb_link}}</h5>
+</div>

@@ -1,0 +1,25 @@
+.card{
+    height: 300px;
+    width: 200px;
+    border: 1px solid grey;
+    display: inline-block;
+    margin: 5%;
+    padding: 2%;
+    vertical-align: bottom;
+    white-space: initial;
+    
+}
+.card:hover{
+ 
+    /* transform: translateZ(-100px); */
+    transform: scale(1.01);
+    box-shadow: 10px 10px grey;
+    /* animation: rotateTo .25s; */
+}
+
+h3,h4,h5{
+    margin: 10px;
+    text-align: center;
+    text-overflow: ellipsis;
+
+}
