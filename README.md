@@ -1,4 +1,7 @@
-<<<<<<< HEAD
+This is a project to display a list of movies which are picked from a json file. The features include:
+1. Sorting the movies based on movie title, release date year or movie budget.
+2. Searching for a movie based on title of the movie.
+
 # MovieDisplay
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
